@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "goit-markup-hw-01",
+			"path": "."
+		},
+		{
+			"name": "css",
+			"path": "../../../Desktop/goit-markup-hw-01/css"
+		},
+		{
+			"name": "IMG",
+			"path": "../../../Desktop/goit-markup-hw-01/IMG"
+		}
+	],
+	"settings": {}
+}
