@@ -1,0 +1,39 @@
+ @media screen and (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+
+       /* header */
+   .logo{
+    margin-right: 120px;
+   }
+
+/* navigation */
+.head-container{
+    display: flex;
+}
+
+/* features */
+
+    .section{
+        padding-top: 96px;
+        padding-bottom: 96px;
+        }
+
+/* What are we doing / About us */
+    .about-section{
+        display: none;
+    }
+
+/* Our Team */
+
+    .our-team-list{
+	display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    }
+
+    .team-item{
+        width: 100%;
+    }  
+} 

@@ -1,0 +1,20 @@
+@media screen and (min-width: 480px){
+    .container{
+        max-width: 428px;
+    }
+
+   /* header */
+   .logo{
+    margin-top: 24px;
+    margin-bottom: 22px;
+   }
+
+.site-nav {
+    align-items: baseline;
+  }
+
+  .modal {
+    max-width: 392px;
+    height: auto;
+  }  
+} 

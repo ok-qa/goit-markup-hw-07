@@ -57,6 +57,22 @@ p {
 	transition-delay: 100ms;
 }
 
+.container{
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.is-hidden{
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+
 /* header, logo */
 .header {
 	background-color: var(--primary-white);
@@ -79,6 +95,10 @@ p {
 }
 
 /* navigation */
+/* mobile-menu */
+
+
+/* desktop-navigation */
 .head-container{
 	display: flex;
   	align-items: center;
@@ -164,13 +184,6 @@ p {
 }
 
 /* main */
-.container{
-	width: 1158px;
-	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
 .section{
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -742,11 +755,6 @@ margin-bottom: 72px;
 	color:(--primary-white);
 }
 
-.is-hidden{
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-}
 
 .modal-title{
 font-family: inherit;
@@ -1010,4 +1018,3 @@ input {
   .subscribe-button:is(:hover, :focus) {
 	background: var(--pressed-state);
   }
-

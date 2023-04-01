@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/desktop.css">
   <title>WebStudio</title>
 </head>
 
@@ -38,6 +41,84 @@
         </li>
         <li class="header-item">
           <a href="tel:+110001111111" class="contact-number">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+    </address>
+    <button
+          type="button"
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use
+              class="menu-icon"
+              href="./images/icons.svg#icon-menu-hamburger"
+            ></use>
+          </svg>
+        </button>
+  </div>
+
+  <div class="mobile-menu  js-mobile-menu is-open"  id="mobile-menu">
+    <button type="button" class="menu-close js-menu-close">
+      <svg width="8" height="8">
+        <use class="menu" href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <ul class="nav-list mobile-nav">
+      <li><a href="./index.html" class="nav-item link">Studio</a></li>
+      <li>
+        <a href="./portfolio.html" class="nav-item link">Portfolio</a>
+      </li>
+      <li><a href="#" class="mobile-current nav-item
+        link">Contacts</a></li>
+    </ul>
+
+    <address class="contacts">
+      <ul class="mobile-address nav-list">
+        <li class="contact-item">
+          <a href="tel:+110001111111" class="mobile-phone contact link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="contact-item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-email contact link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social list">
+        <li class="mobile-social-item">
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="#" class="mobile-social-link">
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </address>
@@ -450,7 +531,7 @@
             <use href="./images/symbol-defs.svg#icon-check"></use>
             </svg>
               </span>
-              <p class="policy"> I accept the terms and conditions of the <a href="#" class="policy-link"> Privacy Policy</a></p>
+              <span class="policy"> I accept the terms and conditions of the <a href="#" class="policy-link"> Privacy Policy</a></span>
       </label>
        
  
@@ -461,6 +542,7 @@
 </div>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
