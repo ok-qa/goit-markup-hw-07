@@ -23,8 +23,9 @@
 <body>
   <!--header start-->
   <header class="header">
+    
     <!--navigation-->
-    <div class="container head-container">
+     <div class="container head-container">
       <nav class="site-nav">
       <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
       <ul class="nav-list">
@@ -33,9 +34,10 @@
         <li class="header-item"><a href="./index.html" class="nav-item">Contacts</a></li>
       </ul>
     </nav>
-
-    <address class="contacts">
-      <ul class="nav-list">
+    
+    <!-- contacts -->
+     <address class="contacts">
+      <ul class="nav-list contact-list">
         <li class="header-item">
           <a href="mailto:info@devstudio.com" class="contact-email">info@devstudio.com</a>
         </li>
@@ -44,38 +46,43 @@
         </li>
       </ul>
     </address>
+
     <button
           type="button"
-          class="menu-btn js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="32" height="22">
+          class="burger-menu-button js-open-menu"
+          aria-expanded="false">
+          <svg class="burger-menu" width="32" height="22">
             <use
               class="menu-icon"
-              href="./images/icons.svg#icon-menu-hamburger"
+              href="./images/symbol-defs.svg#icon-menu-hamburger"
             ></use>
           </svg>
         </button>
   </div>
 
-  <div class="mobile-menu  js-mobile-menu is-open"  id="mobile-menu">
-    <button type="button" class="menu-close js-menu-close">
-      <svg width="8" height="8">
-        <use class="menu" href="./images/icons.svg#icon-close"></use>
+  <!--mobile menu-->
+   <div class="mobile-menu js-menu-container">
+
+    <div class="container mobile-menu-container" id="mobile-menu">
+    <button type="button" class="modal-close js-close-menu"
+        aria-expanded="true"
+        aria-controls="mobile-menu">
+      <svg class="icon-close" width="8" height="8">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
       </svg>
     </button>
 
     <ul class="nav-list mobile-nav">
-      <li><a href="./index.html" class="nav-item link">Studio</a></li>
+      <li><a href="./index.html" class="mobile-nav-item link">Studio</a></li>
       <li>
-        <a href="./portfolio.html" class="nav-item link">Portfolio</a>
+        <a href="./portfolio.html" class="mobile-nav-item link">Portfolio</a>
       </li>
-      <li><a href="#" class="mobile-current nav-item
-        link">Contacts</a></li>
+      <li><a href="#" class="mobile-nav-item link">Contacts</a>
+      </li>
     </ul>
 
-    <address class="contacts">
+    <div class="contacts-and-social">
+    <address class="mobile-contacts">
       <ul class="mobile-address nav-list">
         <li class="contact-item">
           <a href="tel:+110001111111" class="mobile-phone contact link"
@@ -90,7 +97,7 @@
           >
         </li>
       </ul>
-
+     
       <ul class="mobile-social list">
         <li class="mobile-social-item">
           <a href="#" class="mobile-social-link">
@@ -122,6 +129,9 @@
         </li>
       </ul>
     </address>
+    </div>
+  </div>
+
   </div>
   </header>
   <!--/header end-->
@@ -132,14 +142,14 @@
     <!--hero section-->
     <div class="hero-box">
     <section class="hero-section">
-      <div class="container">
+      <div class="container hero-container">
       <h1 class="hero-header">Effective Solutions for Your Business</h1>
-      <button type="button" data-modal-open class="header-button  button">Order Service</button></div>
+      <button type="button" data-modal-open class="hero-button button">Order Service</button></div>
     </section>
     </div>
 
     <!--features-->
-    <section class="features section">
+    <section class="features section features-section">
       <div class="container feature-container">
       <h2 class="section-title visually-hidden">Features</h2>
       <ul class="feature-list">
@@ -191,27 +201,27 @@
         </li>
       </ul>
       </div>
-    </section>
+    </section> 
 
     <!--What are we doing / About us-->
     <section class="section about-section">
       <div class="container about-container">
       <h2 class="section-title">What are we doing</h2>
       <ul class="about-us-list">
-        <li class="about-us-item"><img src="./images/monitor-screen.jpg" alt="Monitor" width="360" height="300"></li>
-        <li class="about-us-item"><img src="./images/phone-screen.jpg" alt="Phone" width="360" height="300"></li>
-        <li class="about-us-item"><img src="./images/phone-laptop.jpg" alt="Phone and Laptop" width="360" height="300">
+        <li class="about-us-item"><img src="./images/what-we-are-doing/monitor-screen.jpg" alt="Monitor" width="360" height="300"></li>
+        <li class="about-us-item"><img src="./images/what-we-are-doing/phone-screen.jpg" alt="Phone" width="360" height="300"></li>
+        <li class="about-us-item"><img src="./images/what-we-are-doing/phone-laptop.jpg" alt="Phone and Laptop" width="360" height="300">
         </li>
       </ul>
       </div>
-    </section>
+    </section> 
 
     <!--Our Team-->
     <section class="our-team-section section">
       <div class="container">
       <h2 class="section-title">Our Team</h2>
       <ul class="our-team-list">
-        <li class="team-item"><img class="team-img" src="./images/mark-guerrero.jpg" alt="Mark Guerrero" width="264">
+        <li class="team-item"><img class="team-img" src="./images/team/mark-guerrero.jpg" alt="Mark Guerrero" width="264">
           <h3 class="title">Mark Guerrero</h3>
           <p class="description">Product Designer</p>
           <ul class="team-social-list">
@@ -237,7 +247,7 @@
             </a></li>
           </ul>
         </li>
-        <li class="team-item"><img class="team-img" src="./images/tom-ford.jpg" alt="Tom Ford" width="264">
+        <li class="team-item"><img class="team-img" src="./images/team/tom-ford.jpg" alt="Tom Ford" width="264">
           <h3 class="title">Tom Ford</h3>
           <p class="description">Frontend Developer</p>
           <ul class="team-social-list">
@@ -262,7 +272,7 @@
             </a></li>
           </ul>
         </li>
-        <li class="team-item"><img class="team-img" src="./images/camila-garcia.jpg" alt="Camila Garcia" width="264">
+        <li class="team-item"><img class="team-img" src="./images/team/camila-garcia.jpg" alt="Camila Garcia" width="264">
           <h3 class="title">Camila Garcia</h3>
           <p class="description">Marketing</p>
           <ul class="team-social-list">
@@ -288,7 +298,7 @@
             </a></li>
           </ul>
         </li>
-        <li class="team-item"><img class="team-img" src="./images/daniel-wilson.jpg" alt="Daniel Wilson" width="264">
+        <li class="team-item"><img class="team-img" src="./images/team/daniel-wilson.jpg" alt="Daniel Wilson" width="264">
           <h3 class="title">Daniel Wilson</h3>
           <p class="description">UI Designer</p>
           <ul class="team-social-list">
@@ -319,7 +329,7 @@
     </section>
 
     <!-- Customers -->
-    <section class="customers-section section">
+     <section class="customers-section section">
       <div class="container">
         <h2 class="section-title">Customers</h2>
         <ul class="customer-list">
@@ -363,15 +373,15 @@
       </div>
     </section>
 
-  </main>
+  </main> 
   <!--/main end-->
 
     <!-- footer -->
-  <footer class="footer">
+<footer class="footer">
     <div class="container footer-container">
 
 
-    <div>
+    <div class="slogan-wrap">
       <a href="./index.html" class="logo"> <span class="logo-web">Web</span><span class="logo-footer">Studio</span></a>
     <p class="footer-text">
       Increase the flow of customers and sales for your business with digital
@@ -426,7 +436,7 @@
           >
         </label>
         <button type="submit" class="subscribe-button button">
-          Subscribe
+          <span class="subscribe-wrap">Subscribe</span>
           <svg class="subscribe-icon" width="24" height="20">
             <use href="./images/symbol-defs.svg#icon-send"></use>
           </svg>
@@ -531,7 +541,7 @@
             <use href="./images/symbol-defs.svg#icon-check"></use>
             </svg>
               </span>
-              <span class="policy"> I accept the terms and conditions of the <a href="#" class="policy-link"> Privacy Policy</a></span>
+              <p class="policy"> I accept the terms and conditions of the <a href="#" class="policy-link"> Privacy Policy</a></p>
       </label>
        
  
