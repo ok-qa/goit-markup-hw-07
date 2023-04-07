@@ -209,9 +209,7 @@
 /* Our Team */
 .our-team-list{
     display: flex;
-    flex-wrap: wrap;
 	justify-content: center;
-	justify-content: space-between;
     
     margin-left: auto;
     margin-right: auto;
